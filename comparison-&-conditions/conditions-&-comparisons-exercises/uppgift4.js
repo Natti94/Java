@@ -20,6 +20,18 @@ nummer = nummer * 10;
 console.log(nummer);
 nummer = Math.round(nummer);
 console.log(nummer);
-
-
 /* FORTSÄTT MED EGEN KOD HÄR */
+
+
+
+var guess = parseFloat(prompt("guess the number between 1-10:"));
+if (guess == nummer)
+{
+alert("you won!")
+
+}
+else (guess ==! nummer)
+{
+alert("you lost!")
+}
+
