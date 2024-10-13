@@ -32,30 +32,30 @@ var restart = function()
 
 { 
 
-var guess = parseFloat(prompt("Guess the number between 1-10:"));
-if (guess == nummer)
+var start = parseFloat(prompt("Guess the number between 1-10:"));
+if (start == nummer)
 {
-alert("YOU WON! " + "the number was: " + (nummer))
+alert("YOU WON THIS TIME IDIOT! " + "the number was: " + (nummer))
 return;
 }
 
-var guessTwo = parseFloat(prompt("Two more chances, guess the number between 1-10:"));
+var guessOne = parseFloat(prompt(nummer == + " Two more chances, guess the number between 1-10:"));
+if (guessOne == nummer)
+{
+alert("YOU WON THIS TIME IDIOT! " + "the number was: " + (nummer))
+return;
+}
+
+var guessTwo = parseFloat(prompt("One more chance, guess the number between 1-10:"));
 if (guessTwo == nummer)
 {
-alert("YOU WON! " + "the number was: " + (nummer))
+alert("YOU WON THIS TIME IDIOT! " + "the number was: " + (nummer))
 return;
 }
 
-var guessThree = parseFloat(prompt("One more chance, guess the number between 1-10:"));
-if (guessThree == nummer)
+else (failed ==! nummer)
 {
-alert("YOU WON! " + "the number was: " + (nummer))
-return;
-}
-
-else (guess ==! nummer)
-{
-alert("dumb fk u lost!")
+alert("HAAHA SO BAD, U LOST xD!")
 return;
 }
 
