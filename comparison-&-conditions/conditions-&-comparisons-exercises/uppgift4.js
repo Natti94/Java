@@ -22,43 +22,61 @@ console.log(nummer);
 nummer = Math.round(nummer);
 console.log(nummer);
 
-// --------------------------------------------------------------------------------------------------------------//
-
 /* FORTSÄTT MED EGEN KOD HÄR */
 
-high = "number was high"
+// --------------------------------------------------------------------------------------------------------------//
 
-var restart = function() 
-
+var restart = function()
 { 
 
 var guess = parseFloat(prompt("Guess the number between 1-10:"));
 if (guess == nummer)
 {
-alert("YOU WON! " + "the number was: " + (nummer))
+alert("YOU WON! " + "the number was: " + (nummer)  + ".");
 return;
+}
+
+if (guess > nummer)
+{
+alert("Number was too high.")    
+}
+else
+if (guess < nummer)
+{
+alert("Number was too low.")    
 }
 
 var guessTwo = parseFloat(prompt("Two more chances, guess the number between 1-10:"));
 if (guessTwo == nummer)
 {
-alert("YOU WON! " + "the number was: " + (nummer))
+alert("YOU WON! " + "the number was: " + (nummer)  + ".")
 return;
+}
+
+if (guessTwo > nummer)
+{
+alert("Number was too high.")    
+}
+else
+if (guessTwo < nummer)
+{
+alert("Number was too low.")    
 }
 
 var guessThree = parseFloat(prompt("One more chance, guess the number between 1-10:"));
 if (guessThree == nummer)
 {
-alert("YOU WON! " + "the number was: " + (nummer))
+alert("YOU WON! " + "the number was: " + (nummer) + ".")
 return;
 }
 
 else (guess ==! nummer)
 {
-alert("dumb fk u lost!")
+alert("UR SO BAD, U LOST!")
 return;
 }
 
 }
-
 restart();
+
+// --------------------------------------------------------------------------------------------------------------//
