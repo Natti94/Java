@@ -234,19 +234,26 @@ dbwebb.assert("1.4", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-var MyFruit;
-var banana = MyFruit == "The Banana is yellow.";
-var apple = MyFruit == "The apple is green.";
+var banana = "The banana is yellow."
+var apple = "The apple is green."
+var kiwi = "The kiwi is green."
+var plum = "The plum is purple."
+var myFruit = banana & apple & kiwi & plum;
 
-MyFruit = plum;
-
-switch(MyFruit)
+switch(myFruit)
 {
-case MyFruit:
+case banana:
+break;
+case apple:
+break;
+case kiwi:
+break;
+case plum:
 break;
 }
 
-ANSWER = plum;
+
+ANSWER = myFruit = plum;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("2.1", ANSWER, true);
@@ -264,16 +271,19 @@ dbwebb.assert("2.1", ANSWER, true);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+var myFruit = pear;
+var pear = "That is an unknown fruit."
+switch(pear)
+{
+case pear:
+default:
+}
 
 
-
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = myFruit = pear;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("2.2", ANSWER, false);
+dbwebb.assert("2.2", ANSWER, true);
 
 /** ----------------------------------------------------------------------
  * Section 3 . For loops
@@ -293,11 +303,13 @@ dbwebb.assert("2.2", ANSWER, false);
  */
 
 
+var i = 6;
 
+for (let i = 0; i < 10; i++) {
+text += "The number is" + i + "<br>" 
+}
 
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = i;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("3.1", ANSWER, false);
