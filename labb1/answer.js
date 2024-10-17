@@ -119,14 +119,31 @@ dbwebb.assert("1.2", ANSWER, true);
  */
 
 
+var sum = card1 + card2 + card3;
+var safe = 21 < sum;
+var busted = 21 > sum;
+var blackjack = 21;
+var status
 
+if (sum > safe)
+{
+status = "safe"
+}
 
+if (sum < busted) 
+{
+status = "busted"
+}
 
+if (sum ==! blackjack)
+{
+status = "black jack"
+}
  
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = status;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.3", ANSWER, false);
+dbwebb.assert("1.3", ANSWER, true);
 
 /**
  * Exercise 1.4 (2 points)
@@ -152,14 +169,40 @@ dbwebb.assert("1.3", ANSWER, false);
  */
 
 
+var dealer1 = 1 || 6 || 7;
+var dealer2 = 1 || 6 || 7;
+var dealer3 = 1 || 6 || 7;
+var pick = "pick";
+var stop = "stop";
+var blackjack = "black jack";
+var busted = "busted";
+
+if (dealer1 + dealer2 + dealer3 < 17);
+{
+pick;
+}
+
+if (dealer1 + dealer2 + dealer3 == 17 || dealer1 + dealer2 + dealer3 == 17-20);
+{
+stop;
+}
+
+if (dealer1 + dealer2 + dealer3 == 21);
+{
+blackjack;
+}
+
+if (dealer1 + dealer2 + dealer3 > 21);
+{
+busted;
+}
 
 
 
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = pick;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.4", ANSWER, false);
+dbwebb.assert("1.4", ANSWER, true);
 
 /** ----------------------------------------------------------------------
  * Section 2 . Switch, case
@@ -191,15 +234,22 @@ dbwebb.assert("1.4", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+var MyFruit;
+var banana = MyFruit == "The Banana is yellow.";
+var apple = MyFruit == "The apple is green.";
 
+MyFruit = plum;
 
+switch(MyFruit)
+{
+case MyFruit:
+break;
+}
 
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = plum;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("2.1", ANSWER, false);
+dbwebb.assert("2.1", ANSWER, true);
 
 /**
  * Exercise 2.2 (1 points)
