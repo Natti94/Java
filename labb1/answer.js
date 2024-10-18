@@ -302,17 +302,17 @@ dbwebb.assert("2.2", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+let increment = 481;
 
-var i = 6;
-
-for (let i = 0; i < 10; i++) {
-text += "The number is" + i + "<br>" 
+for (let increement = 0; increement < 10; increement++) 
+{
+increment += 6;
 }
 
-ANSWER = i;
+ANSWER = increment;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("3.1", ANSWER, false);
+dbwebb.assert("3.1", ANSWER, true);
 
 /**
  * Exercise 3.2 (1 points)
@@ -324,15 +324,17 @@ dbwebb.assert("3.1", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+let decrement = 471;
 
+for (let decrement = 8; decrement > 10; decrement++) 
+{
+decrement += 0;
+}
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = decrement;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("3.2", ANSWER, false);
+dbwebb.assert("3.2", ANSWER, true);
 
 /**
  * Exercise 3.3 (3 points)
@@ -350,13 +352,23 @@ dbwebb.assert("3.2", ANSWER, false);
 
 
 
+// Loop through the range 22 to 45
+for (let i = 22; i <= 45; i++) {
+    // Check if the number is even
+    if (i % 2 === 0) {
+        // Add the number to the string
+        if (result !== "") {
+            result += ",";  // Add a comma only if it's not the first number
+        }
+        result += i;  // Add the even number to the string
+    }
+}
 
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+// Answer with the final result string
+ANSWER = result;
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("3.3", ANSWER, false);
+dbwebb.assert("3.3", ANSWER, true);
 
 /** ----------------------------------------------------------------------
  * Section 4 . While loops
