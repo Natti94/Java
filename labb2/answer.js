@@ -57,14 +57,22 @@ console.log("Ready to begin.");
  */
 
 
+function sumRangeNumbers() {
+var low = 22;
+var high = 91;
+var sum = 0; // Initialize sum to 0
 
- 
+    for (var i = low; i <= high; i++) {
+        sum += i; // Add each number in the range to sum
+    }
 
+    return sum; // Return the total sum
+}
 
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = sumRangeNumbers();
 
-// I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.1", ANSWER, false);
+// Print the result (optional, for debugging purposes)
+dbwebb.assert("1.1", ANSWER, true);
 
 /**
  * Exercise 1.2 (1 points)
@@ -82,13 +90,30 @@ dbwebb.assert("1.1", ANSWER, false);
 
 
 
+function fruitColor(ANSWER) {
+    
+    var fruit;
+    // Check which fruit was passed and return the corresponding color
+    if (fruit === "banana") {
+        return "yellow";
+    } else if (fruit === "apple") {
+        return "green";
+    } else if (fruit === "kiwi") {
+        return "green";
+    } else if (fruit === "plum") {
+        return "red";
 
+    } else {
+        return "unknown"; // Default case if fruit is not recognized
+    }
+}
 
+// Call the function with the fruit 'plum' and store the result in ANSWER
+ANSWER = fruitColor;
 
-ANSWER = "Replace this text with the variable holding the answer.";
+// Print the result (optional, for debugging purposes)
+dbwebb.assert("1.2", ANSWER, true);
 
-// I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.2", ANSWER, false);
 
 /**
  * Exercise 1.3 (1 points)
@@ -105,14 +130,28 @@ dbwebb.assert("1.2", ANSWER, false);
  */
 
 
+function printRange(rangeStart, rangeStop) {
+    var rangeStart = 25
+    var rangeStop = 47;
+    var text = ""; // Initialize text to store the concatenated numbers
 
+    // Loop through the range from rangeStart to rangeStop (exclusive)
+    for (var i = rangeStart; i < rangeStop; i++) {
+        if (i < rangeStop - 1) {
+            text += i + ","; // Add a comma and space after each number except the last one
+        } else {
+            text += i; // For the last number, just add the number without a comma
+        }
+    }
 
+    return text; // Return the concatenated string
+}
 
-
-ANSWER = "Replace this text with the variable holding the answer.";
+// Call the function and store the result in ANSWER
+ANSWER = printRange();
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.3", ANSWER, false);
+dbwebb.assert("1.3", ANSWER, true);
 
 /**
  * Exercise 1.4 (1 points)
