@@ -88,28 +88,29 @@ dbwebb.assert("1.1", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function fruitColor(fruit) {
+    var text = ""; // Initialize the variable to hold the fruit color
 
-
-function fruitColor(ANSWER) {
-    
-    var fruit;
     // Check which fruit was passed and return the corresponding color
     if (fruit === "banana") {
-        return "yellow";
+        text = "yellow";
     } else if (fruit === "apple") {
-        return "green";
+        text = "green";
     } else if (fruit === "kiwi") {
-        return "green";
+        text = "green";
     } else if (fruit === "plum") {
-        return "red";
-
+        text = "red";
     } else {
-        return "unknown"; // Default case if fruit is not recognized
+        text = "unknown"; // Default case if fruit is not recognized
     }
+
+    return text; // Return the color of the fruit
 }
 
-// Call the function with the fruit 'plum' and store the result in ANSWER
-ANSWER = fruitColor;
+// Example call to the function with 'plum'
+ANSWER = fruitColor("plum");
+
+
 
 // Print the result (optional, for debugging purposes)
 dbwebb.assert("1.2", ANSWER, true);
@@ -167,15 +168,25 @@ dbwebb.assert("1.3", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function printRangeReversed(rangeStop, rangeStart) 
+{
 
+var rangeStop = 47;
+var rangeStart = 25;
+var text = "";
 
+for (var i = rangeStart; i < rangeStop; i++) 
 
+    {
+text += i + ",";
+}
+return text;
+}
 
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = printRangeReversed();
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.4", ANSWER, false);
+dbwebb.assert("1.4", ANSWER, true);
 
 /**
  * Exercise 1.5 (1 points)
