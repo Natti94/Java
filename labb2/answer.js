@@ -168,25 +168,25 @@ dbwebb.assert("1.3", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-function printRangeReversed(rangeStop, rangeStart) 
+function printRangeReversed(rangeStart, rangeStop) 
 {
+    var text = "";
+    var i; 
 
-var rangeStop = 47;
-var rangeStart = 25;
-var text = "";
-
-for (var i = rangeStart; i < rangeStop; i++) 
-
+    for (i = rangeStart; i >= rangeStop; i--)  
     {
-text += i + ",";
-}
-return text;
+        text += i + ",";
+    }
+
+    return text.slice(0, -1); // Remove the last comma
 }
 
-ANSWER = printRangeReversed();
+var ANSWER = printRangeReversed(46, 25); // Call the function and assign the result
+console.log(ANSWER); // Print the result
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.4", ANSWER, true);
+
 
 /**
  * Exercise 1.5 (1 points)
@@ -208,15 +208,27 @@ dbwebb.assert("1.4", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function printRange(rangeStart, rangeStop) 
+
+{
+
+var text = ""
+var i;
+
+for (i = rangeStart; i <= rangeStop; i++)
+{
+text += i + ","  
+}
+return text.slice(0, -1);
+}
+ 
+ANSWER = printRange(25, 46) ;
 
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.5", ANSWER, false);
+dbwebb.assert("1.5", ANSWER, true);
+
 
 /**
  * Exercise 1.6 (1 points)
