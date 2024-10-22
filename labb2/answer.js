@@ -208,7 +208,7 @@ dbwebb.assert("1.4", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-function printRange(rangeStart, rangeStop) 
+function printAnyRange(rangeStart, rangeStop) 
 
 {
 
@@ -222,8 +222,7 @@ text += i + ","
 return text.slice(0, -1);
 }
  
-ANSWER = printRange(25, 46) ;
-
+ANSWER = printAnyRange(25, 46);
 
 
 // I will now test your answer - change false to true to get a hint.
@@ -251,7 +250,7 @@ dbwebb.assert("1.5", ANSWER, true);
 ANSWER = "Replace this text with the variable holding the answer.";
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.6", ANSWER, false);
+dbwebb.assert("1.6", ANSWER, true);
 
 /**
  * Exercise 1.7 (1 points)
