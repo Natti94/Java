@@ -242,12 +242,17 @@ dbwebb.assert("1.5", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function stringRepeat() {
+let grey = "grey"
+let number = 12;
+let text = "";
+for (let i = number;i > grey; i++) {
+text += grey + ",";        
+}
+return grey;
+}
 
-
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = stringRepeat();
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.6", ANSWER, true);
