@@ -274,24 +274,21 @@ dbwebb.assert("1.6", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-function inRange()
+function inRange(rangeStart, rangeStop)
 {
-let rangeStart = 131;
-let rangeStop = 547;
+let text = "";
 let value = 434;
-let i;
-for (i = rangeStart; i <= value; i++)
 {
-if (rangeStart)
-    {
-return ANSWER;
-    }
-
+if (value > rangeStart)
+{
+return true;
+}
 }
 
 }
 
-var ANSWER = inRange();
+
+ANSWER = inRange();
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.7", ANSWER, true);
