@@ -182,7 +182,7 @@ function printRangeReversed(rangeStart, rangeStop)
 }
 
 var ANSWER = printRangeReversed(46, 25); // Call the function and assign the result
-console.log(ANSWER); // Print the result
+
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.4", ANSWER, true);
@@ -274,15 +274,27 @@ dbwebb.assert("1.6", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function inRange()
+{
+let rangeStart = 131;
+let rangeStop = 547;
+let value = 434;
+let i;
+for (i = rangeStart; i <= value; i++)
+{
+if (rangeStart)
+    {
+return ANSWER;
+    }
 
+}
 
+}
 
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+var ANSWER = inRange();
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.7", ANSWER, false);
+dbwebb.assert("1.7", ANSWER, true);
 
 /**
  * Exercise 1.8 (1 points)
