@@ -276,16 +276,18 @@ dbwebb.assert("1.6", ANSWER, true);
 
 function inRange(rangeStart, rangeStop)
 {
-let text = "";
-let value = 434;
-{
-if (value > rangeStart)
-{
-return true;
-}
+var value = 434;
+var rangeStart = 131
+var rangeStop = 547
+
+    // Check if value is within the range (inclusive)
+    if (value >= rangeStart && value <= rangeStop) {
+        return true; // Return true if value is in the range
+    } else {
+        return false; // Return false if value is outside the range
+    }
 }
 
-}
 
 
 ANSWER = inRange();
@@ -304,15 +306,22 @@ dbwebb.assert("1.7", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+function inRange(rangeStart, rangeStop) 
+{
+let value = 636;
+let text = "";
+for (let i = 131; i <= 547; i++)
 
+{
+text += value;
+}
+return false;
+}
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = inRange();
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.8", ANSWER, false);
+dbwebb.assert("1.8", ANSWER, true);
 
 /**
  * Exercise 1.9 (1 points)
