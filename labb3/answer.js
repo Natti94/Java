@@ -66,12 +66,6 @@ var array2 =
 ]
 ;
 
-
-
-
-
-
-
 ANSWER = array2[1];
 
 // I will now test your answer - change false to true to get a hint.
@@ -88,23 +82,20 @@ dbwebb.assert("1.1", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
-
 var array2 = 
 [
 "potato", 
 "carrot", 
 "onion", 
 "leek", 
-"cabbage"
+"cabbage",
 ]
 ;
 
-
-
-ANSWER = array2[0] +"-"+ array2[4];
+ANSWER = array2[0] + "-" + array2[4];
 
 // I will now test your answer - change false to true to get a hint.
-dbwebb.assert("1.2", ANSWER, false);
+dbwebb.assert("1.2", ANSWER, true);
 
 /**
  * Exercise 1.3 (1 points)
@@ -120,13 +111,8 @@ dbwebb.assert("1.2", ANSWER, false);
  */
 
 var array1 = [47,98,-13,0,-412,499,3,1200];
-var array3 = array1 + array2;
-let text = "haha"
-if (array3)
+var array3 = array1 + "," + array2 || "";
 
-{
-text + array3;
-}
 
 
 ANSWER = array3;
@@ -152,7 +138,7 @@ dbwebb.assert("1.3", ANSWER, true);
 
 
 
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = "eee";
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.4", ANSWER, false);
