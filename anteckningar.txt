@@ -1,0 +1,25 @@
+java-anteckningar 
+-------------------
+
+Hur man kallar på två olika funktioner inom ett block -
+
+
+ex. 
+Kalla på funktion printRangeReversed inom de globala funktionen för uppgiften.
+
+--------
+
+ARRAY, HUR > 
+t.ex.
+
+let/variable = [värde, värde, sträng, x, x, x, x, boolean (false/true)]
+
+tänk på att:
+värde för index pos 1 är = 0 etc.. 1 = 2.
+
+Att det går att "nessla" en array in i en array, likadant som ett "IF statement"
+
+console.log(X[array pos x]) = skriver ut enbart de värdet.
+
+
+
