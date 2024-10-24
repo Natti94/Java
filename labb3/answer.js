@@ -110,12 +110,13 @@ dbwebb.assert("1.2", ANSWER, true);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+
 var array1 = [47,98,-13,0,-412,499,3,1200];
-var array3 = array1 + "," + array2 || "";
-
-
-
+var array3 = [array1 + "," + array2];
+var text = array3;
+array1 = text.slice(-1)
 ANSWER = array3;
+
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("1.3", ANSWER, true);
 

@@ -243,7 +243,7 @@ dbwebb.assert("1.5", ANSWER, true);
  */
 
 function stringRepeat() {
-let grey = "grey"
+let grey = "grey";
 let number = 12;
 let text = "";
 for (let i = number;i > grey; i++) {
@@ -280,15 +280,15 @@ var value = 434;
 var rangeStart = 131
 var rangeStop = 547
 
-    // Check if value is within the range (inclusive)
-    if (value >= rangeStart && value <= rangeStop) {
-        return true; // Return true if value is in the range
-    } else {
-        return false; // Return false if value is outside the range
-    }
+// Check if value is within the range (inclusive)
+if (value >= rangeStart && value <= rangeStop) {
+return true; // Return true if value is in the range
+} 
+else
+{
+return false; // Return false if value is outside the range
 }
-
-
+}
 
 ANSWER = inRange();
 
